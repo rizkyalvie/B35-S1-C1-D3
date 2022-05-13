@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap');
+:root {
+    /*Theme Color */
+    --bgcolor: #e3e7eb;
+    --card-bgcolor: #ffffff;
+    --card-hover: #e3e7eb;
+    --btn: #111727;
+    --btn-hover: #1e263b;
+    --icon: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: var(--bgcolor)
+}
+
+
+/* NAVBAR */
+
+nav {
+    display: flex;
+    height: 7vh;
+    background-color: var(--card-bgcolor);
+    width: 100%;
+}
+
+nav div {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    overflow: hidden;
+}
+
+.nav-left {
+    margin-left: 100px;
+}
+
+.nav-left ol {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+.nav-left ol li {
+    display: inline;
+    font-weight: 600;
+}
+
+.nav-left ol li a {
+    padding: 30px 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-left ol li a:hover {
+    background-color: var(--card-hover);
+}
+
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+
+.nav-right a {
+    border-radius: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: var(--btn)
+}
+
+.nav-right a:hover {
+    color: white;
+    background-color: var(--btn-hover)
+}
+
+
+/* x NAVBAR x */
+
+
+/* INDEX */
+
+
+/* Personal Card */
+
+.pc-container {
+    display: flex;
+    height: 93vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin: 90px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+    background-color: var(--card-bgcolor);
+}
+
+.pc-container .personal-card {
+    width: 90%;
+    display: flex;
+}
+
+.pc-container .personal-card .pc-left {
+    flex: 60%;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pc-container .personal-card .pc-left .pc-title {
+    width: 100%;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px 0px;
+}
+
+.pc-container .personal-card .pc-left .pc-about {
+    text-align: justify;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+.pc-container .personal-card .pc-left .pc-btn {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.pc-container .personal-card .pc-left .pc-btn .pc-contact a {
+    padding: 10px 20px;
+    background-color: var(--btn);
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.pc-container .personal-card .pc-left .pc-btn .pc-contact a:hover {
+    background-color: var(--btn-hover);
+    color: var(--bgcolor);
+}
+
+.pc-container .personal-card .pc-left .pc-btn .pc-cv a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.pc-container .personal-card .pc-left .pc-sm {
+    display: flex;
+    font-size: 40px;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.pc-container .personal-card .pc-left .pc-sm a {
+    text-decoration: none
+}
+
+.pc-container .personal-card .pc-left .pc-sm i {
+    text-decoration: none;
+    color: var(--icon);
+}
+
+.pc-container .personal-card .pc-left .pc-sm i:hover {
+    color: var(--btn-hover)
+}
+
+.pc-container .personal-card .pc-right {
+    flex: 40%;
+    justify-content: center;
+}
+
+.pc-container .personal-card .pc-right .pc-me {
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+    text-align: center;
+}
+
+.pc-container .personal-card .pc-right .pc-me img {
+    width: 100%
+}
+
+.pc-container .personal-card .pc-right .pc-me p {
+    margin: 10px 0px 5px 0px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.pc-container .personal-card .pc-right .pc-me h4 {
+    margin: 5px 0px 10px 0px;
+}
+
+
+/* x Personal Card x */
+
+
+/* x INDEX x */
+
+
+/* Contact */
+
+.contact-title {
+    margin: 50px 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.contact-form {
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    box-shadow: 0 5px 5px rgb(0 0 0 / 26%);
+}
+
+.contact-form form select,
+.contact-form form textarea {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    box-shadow: 0 5px 5px rgb(0 0 0 / 26%);
+}
+
+.contact-form form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 99%;
+    background-position-y: 8px;
+    background-size: 30px;
+    background-color: white;
+}
+
+textarea::-webkit-scrollbar {
+    width: 10px;
+}
+
+textarea::-webkit-scrollbar-track {
+    background-color: lightgrey;
+    border-radius: 15px
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 15px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form .cf-button button {
+    float: right;
+    padding: 10px 25px;
+    color: var(--card-bgcolor);
+    background-color: var(--btn);
+    font-size: 17px;
+    border: none;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.contact-form .cf-button button:hover {
+    background-color: var(--btn-hover);
+}
